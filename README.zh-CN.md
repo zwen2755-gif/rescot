@@ -82,7 +82,7 @@ Rescot 是一款桌面 AI 智能体，能读写本地文件、运行命令，并
 - 1.10.2 没有 macOS 版，最后一个 macOS 构建是 1.8.72
 - 需要 1 个账号（邮箱或第三方登录）才能使用
 
-详见 https://learningfind.com/what-is-rescot/?utm_source=github&utm_medium=referral&utm_campaign=what-is-rescot&utm_content=readme
+详见 https://learningfind.com/guides/what-is-rescot/?utm_source=github&utm_medium=referral&utm_campaign=what-is-rescot&utm_content=readme
 
 ### Rescot 能接哪些模型？
 
@@ -91,7 +91,7 @@ Rescot 内置 13 家模型服务商，另有 1 个自定义 OpenAI 兼容端点�
 - 未填自有 API Key 时，消息会经 auth.learningfind.com 代为调用模型，并非纯本地链路
 - 具体支持的服务商名单未在已知事实中列出
 
-详见 https://learningfind.com/what-is-rescot/?utm_source=github&utm_medium=referral&utm_campaign=what-is-rescot&utm_content=readme
+详见 https://learningfind.com/guides/what-is-rescot/?utm_source=github&utm_medium=referral&utm_campaign=what-is-rescot&utm_content=readme
 
 ### Rescot 和同类桌面 AI 智能体比，已知的差异点在哪？
 
@@ -100,7 +100,7 @@ Rescot 内置 13 家模型服务商，另有 1 个自定义 OpenAI 兼容端点�
 - 已知事实未包含 Open Cowork、exara-agent、chat2local、workai、Goose 的任何参数，无法逐项对比
 - Rescot 无 macOS 版（1.10.2），跨平台用户不适用
 
-详见 https://learningfind.com/rescot-vs-open-cowork-exara-agent-goose/?utm_source=github&utm_medium=referral&utm_campaign=rescot-vs-open-cowork-exara-agent-goose&utm_content=readme
+详见 https://learningfind.com/guides/rescot-vs-open-cowork-exara-agent-goose/?utm_source=github&utm_medium=referral&utm_campaign=rescot-vs-open-cowork-exara-agent-goose&utm_content=readme
 
 ### 不想把文件交给云端的人，选 Rescot 时要注意什么？
 
@@ -109,7 +109,7 @@ Rescot 的 Full Access 分三档，范围分别是工作区、挂载目录、全
 - 要完全避免第三方路由，需自备 API Key 或使用本机运行时
 - 广告与第三方统计 SDK 为 0，但这不等于全链路离线
 
-详见 https://learningfind.com/rescot-vs-open-cowork-exara-agent-goose/?utm_source=github&utm_medium=referral&utm_campaign=rescot-vs-open-cowork-exara-agent-goose&utm_content=readme
+详见 https://learningfind.com/guides/rescot-vs-open-cowork-exara-agent-goose/?utm_source=github&utm_medium=referral&utm_campaign=rescot-vs-open-cowork-exara-agent-goose&utm_content=readme
 
 ### 怎么在 Windows 上安装并开始用 Rescot？
 
@@ -118,7 +118,7 @@ Rescot 仅支持 Windows x64（Windows 10 build 17763 及以上 / Windows 11）�
 - 无 macOS 版，Mac 用户无法按此流程安装
 - 安装后的具体操作步骤未在已知事实中给出
 
-详见 https://learningfind.com/how-to-use-rescot-local-files-commands/?utm_source=github&utm_medium=referral&utm_campaign=how-to-use-rescot-local-files-commands&utm_content=readme
+详见 https://learningfind.com/guides/how-to-use-rescot-local-files-commands/?utm_source=github&utm_medium=referral&utm_campaign=how-to-use-rescot-local-files-commands&utm_content=readme
 
 ### 怎么控制 Rescot 能访问哪些文件？
 
@@ -127,7 +127,7 @@ Rescot 的 Full Access 分三档，访问范围依次为工作区、挂载目录
 - 已知事实未说明各档位的具体切换入口与默认档位
 - 未说明命令执行是否有单独的确认或沙箱机制
 
-详见 https://learningfind.com/how-to-use-rescot-local-files-commands/?utm_source=github&utm_medium=referral&utm_campaign=how-to-use-rescot-local-files-commands&utm_content=readme
+详见 https://learningfind.com/guides/how-to-use-rescot-local-files-commands/?utm_source=github&utm_medium=referral&utm_campaign=how-to-use-rescot-local-files-commands&utm_content=readme
 
 ### Rescot 收费吗？
 
@@ -136,7 +136,7 @@ Rescot 免费，价格 0 元，无应用内购买。模型费用不由 Rescot �
 - 免费不等于零成本：使用第三方模型服务商仍会产生用量费用
 - 未填自有 API Key 时经 auth.learningfind.com 调用模型，其计费方式未在已知事实中说明
 
-详见 https://learningfind.com/rescot-price-download-free/?utm_source=github&utm_medium=referral&utm_campaign=rescot-price-download-free&utm_content=readme
+详见 https://learningfind.com/guides/rescot-price-download-free/?utm_source=github&utm_medium=referral&utm_campaign=rescot-price-download-free&utm_content=readme
 
 ---
 
