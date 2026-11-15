@@ -86,103 +86,59 @@ Rescot：桌面 AI 智能体，能读写本地文件、运行命令、连接你�
 
 ## 你可能在问
 
-### 怎么把桌面 AI 智能体连接到自己部署的模型服务器？
+### 怎么对比同一事件不同媒体的报道差异？
 
-就已知事实看，Rescot 免费（0 元、无应用内购买），仅支持 Windows x64，内置 13 家模型服务商加 1 个自定义 OpenAI 兼容端点，模型费用由用户自己的服务商按用量收取。Full Access 分三档，可访问工作区、挂载目录与全盘。
-
-
-### 连接自建模型服务器时，桌面 AI 智能体支持哪些接口协议？
-
-就已知事实看，Rescot 免费（0 元、无应用内购买），仅支持 Windows x64，内置 13 家模型服务商加 1 个自定义 OpenAI 兼容端点，模型费用由用户自己的服务商按用量收取。Full Access 分三档，可访问工作区、挂载目录与全盘。
+对比同一事件不同媒体的报道差异，通常采用内容分析法，从报道总体情况、信息来源、报道议题和报道偏向等维度进行系统比较。 [来源1](http://media.people.com.cn/n1/2016/0302/c402788-28165256.html)样本选择上，可限定同一时间窗口内的报道，例如对某一事件选取约90天的报纸进行分析，或收集两家媒体共357篇在线新闻文字报道作为研究对象。 [来源3](http://media.people.com.cn/n1/2020/0109/c431266-31541838.html) [来源4](http://css.cssn.cn/webpic/web/sociology/upload/2010/11/d20101122105523461.pdf)分析维度可细化为新闻来源、信息来源、报道基调、报道内容和表现形式等6个比较维度。 [来源3](http://media.people.com.cn/n1/2020/0109/c431266-31541838.html)需要注意的是，覆盖频率等指标只反映报道在语料中出现的频次，并不确立事实，缺失也不意味着有意省略。 [来源2](https://pypi.org/project/news-deframe/1.2.0/)
 
 
-### 这类工具支持哪些操作系统，跨平台体验差异大吗？
+### 怎么系统地追踪一个行业的关键事件，不漏掉重要动态？
 
-- 支持的操作系统: Windows 10（17763 及以上）/ Windows 11，x64 ([来源](https://learningfind.com/answers/rscot-pricing-zh/), 2026-11-06)
-- 支持的操作系统: Windows 10（build 17763 或更高）/ Windows 11，x64 ([来源](https://learningfind.com/answers/rscot-pricing/), 2026-11-06)
-
-### 怎么限制桌面 AI 智能体只能访问指定文件夹？
-
-Rescot 的 Full Access 分三档，访问范围依次为工作区、挂载目录、全盘。只想让 AI 处理某个项目时，选范围最小的档位即可把可访问范围限制在工作区内。
+要系统地追踪行业关键事件，核心做法是建立“采集—去重聚类—评分—人工审核—沉淀”的分层流程，而不是依赖单一信息源或单次搜索。 [来源1](https://www.feishu.cn/content/article/7647368333007997909) [来源4](https://github.com/barretlee/agent-pulse/blob/v0.5.1/README.md)首先应扩大信息面并保留原始证据，把官网、社媒、媒体、社区等来源的原始内容放在后台证据层，公开呈现前再做结构化处理。 [来源1](https://www.feishu.cn/content/article/7647368333007997909) [来源4](https://github.com/barretlee/agent-pulse/blob/v0.5.1/README.md)其次要对同一事件做去重与聚类，因为同一件事常被多个账号重复转述，事实与观点容易混在一起，单平台声量也不等于真实热点。 [来源4](https://github.com/barretlee/agent-pulse/blob/v0.5.1/README.md)判断重要性时可用可信度与热度两个独立分数，参考多个独立来源、跨平台传播、地区宽度、扩散速度和持续性等条件。 [来源4](https://github.com/barretlee/agent-pulse/blob/v0.5.1/README.md)此外，可在正式监测前对检索条件做采样测试并迭代范围，再锁定用于持续监测的查询。 [来源5](https://perigon.io/blog/signals?from=%2Fblog)最后把结构化结果写入可协作的承接层，记录证据、状态与人工判断，使选题和判断可复盘、可复用。 [来源1](https://www.feishu.cn/content/article/7647368333007997909)
 
 
-### 本地 AI 智能体读写文件时如何限制访问范围？
+### 怎么追踪一个细分赛道的融资和并购事件？
 
-Rescot 的 Full Access 分三档，访问范围依次为工作区、挂载目录、全盘。只想让 AI 处理某个项目时，选范围最小的档位即可把可访问范围限制在工作区内。
-
-
-### 桌面 AI 智能体支持哪些操作系统上的文件读写？
-
-- 支持的操作系统: Windows 10（17763 及以上）/ Windows 11，x64 ([来源](https://learningfind.com/answers/rscot-pricing-zh/), 2026-11-06)
-- 支持的操作系统: Windows 10（build 17763 或更高）/ Windows 11，x64 ([来源](https://learningfind.com/answers/rscot-pricing/), 2026-11-06)
-
-### 桌面 AI 智能体适合程序员用吗，能帮做哪些日常任务？
-
-这类工具的核心是从“生成内容”转向“执行动作”，能自主拆解任务、调用工具并观察结果后修正，而非仅输出文本建议。 [来源5](https://cloud.tencent.com.cn/developer/article/2716640?policyId=1003) 对程序员而言，可覆盖代码检索、跨文件编辑、测试验证等长链路任务，也能处理文档生成、数据分析、文件整理等日常办公场景。 [来源3](http://www.iheima.com/article-398608.html) [来源6](https://m.jiemian.com/article/15123258.html) 本地优先与模型无关是常见取舍，数据可留在本机、自带 API Key 接入不同模型，代价是需自行配置环境与权限。 [来源8](https://www.qbitai.com/2026/07/460892.html)
+可按行业分类、子行业、融资轮次、地区和时间段等条件筛选事件，从而把范围收窄到目标赛道。 [来源3](https://github.com/lgyers/itjuzi_mcp) [来源6](https://help.holoniq.com/en/articles/5718655-funding-analytics-unlocking-the-power-of-deals)部分平台提供按产业、技术、场景、概念、区域分类的企业展示，便于结合投行动态观察细分领域的投资生态。 [来源1](https://vip.pharnexcloud.com/help/guide-45.html)对重点公司、投资机构或赛道建立关注列表后，可接收融资轮次、并购等变化的实时更新与提醒。 [来源4](https://lp.startupnationcentral.org/finder-watchlists/)也有平台支持对特定公司、地区或行业的收购、并购、合资及股权融资活动进行检索，并配合邮件提醒。 [来源8](https://www.sris.com.tw/product/uzabase-speeda-business-insights)若需要结构化输出，可通过接口按主题抓取融资与并购信息，解析公司、金额、轮次与投资方，并按行业过滤生成摘要。 [来源7](https://github.com/solvrbase/solvr/blob/83e6d3dc219701d804fb0cc292693ff18aa56c4a/intels/deal-flow.md)
 
 
-### 桌面 AI 助手能直接读写本地文件，这类工具怎么选才不踩坑？
+### 怎么区分一家公司的重要公告和噪音新闻？
 
-选这类工具的核心是"适配而非最优"，先分清自己要的是"会说"还是"会做"，再按场景匹配。 [来源8](https://developer.aliyun.com/article/1758187) 技术路线上，2026 年的工程共识是接口优先、视觉兜底，执行后回读状态做验证和自我修正。 [来源7](https://cloud.tencent.cn/developer/article/2718024?policyId=1003) 选型还应关注边界可控、中途干预、失败恢复与权限审计，并以实际任务效果真试真用。 [来源4](https://cloud.tencent.cn/developer/article/2767922?policyId=1003) [来源5](https://cloud.tencent.cn/developer/article/2767922) [来源8](https://developer.aliyun.com/article/1758187)
-
-
-### 支持自定义模型端点的桌面 AI 助手怎么配置，需要什么格式的接口？
-
-配置自定义模型端点通常是在桌面客户端的设置中填写 Base URL、API Key 和模型 ID 三项信息，接口需符合 OpenAI 兼容格式。 [来源1](https://github.com/18534516725/llm-api-setup-guides/blob/06b36d4e06025c561bd1cf2ea4555e71b0192928/guides/chat-clients/jan.md) [来源3](https://github.com/18534516725/llm-api-setup-guides/blob/main/guides/coding-tools/aionui.md) [来源4](https://github.com/18534516725/llm-api-setup-guides/blob/main/guides/chat-clients/chatwise.md) 若服务端未提供模型列表，需要手动添加模型 ID。 [来源1](https://github.com/18534516725/llm-api-setup-guides/blob/06b36d4e06025c561bd1cf2ea4555e71b0192928/guides/chat-clients/jan.md) [来源2](https://raw.githubusercontent.com/18534516725/llm-api-setup-guides/refs/heads/main/guides/chat-clients/jan.md) 配置完成后建议先用纯文本测试，因为兼容端点不代表支持图片、音频、工具调用等能力。 [来源4](https://github.com/18534516725/llm-api-setup-guides/blob/main/guides/chat-clients/chatwise.md)
+区分公司重要公告与噪音新闻，核心在于判断信息是否具备可溯源的来源、可推演的逻辑和可验证的数据，三者缺一则信号质量存疑。 [来源7](http://mp.weixin.qq.com/s?__biz=MzI5NjUwMjU1OA==&mid=2247525774&idx=2&sn=5ddf127f50ff87f1732e6632aa115b91)首先按来源分层，法定信息披露平台上的公司公告可信度最高，媒体报道需看是否转载公告原文，自媒体观点和小道消息只宜作参考。 [来源6](http://mp.weixin.qq.com/s?__biz=MzYzNDY0MDgzOA==&mid=2247483713&idx=1&sn=33a17e5b092c8312d329ec746ef27ea4)其次按实质定性，能重塑行业盈利底层逻辑或落地转化为实际营收利润的信息属于重要事件，仅影响短期情绪、无法验证的传闻归为噪音。 [来源1](https://m.163.com/dy/article/L3SHJMPC0519D4UH.html) [来源6](http://mp.weixin.qq.com/s?__biz=MzYzNDY0MDgzOA==&mid=2247483713&idx=1&sn=33a17e5b092c8312d329ec746ef27ea4)也可借助“重要性”标准过滤：若信息足以改变公司财务状态与未来前景，则具重要性；若只是产品常规更新且不影响营收预测，则影响有限。 [来源5](https://www.ainvest.com/ko/news/materiality-filter-product-news-stock-signals-2609/)此外应拉长时间尺度，多数情况下只有季度财报公布时才能真正了解公司健康状况，日常股价波动多属噪音。 [来源3](https://www.ctee.com.tw/news/20250609700004-431001)最后需注意，消息在不同行情阶段作用不同，行情末端释放的利好常是资金兑现信号，需结合资金共识验证其有效性。 [来源1](https://m.163.com/dy/article/L3SHJMPC0519D4UH.html)
 
 
-### 自己提供模型和 GPU 的 AI 桌面工具，价格怎么算？
+### 怎么在追踪消息时保留原始出处，方便以后回溯？
 
-自己提供模型和 GPU 时，桌面工具的价格通常不按订阅或席位计费，而取决于模型来源与算力归属的划分方式。 [来源1](https://github.com/nodetool-ai/nodetool/blob/9e3bdff35744a3a33300c303007e951f71fd9861/docs/faq.md) [来源7](https://osfoundry.io/features/usage-billing) 若使用自有 API 密钥直连云服务商，费用按各提供商的实际调用量结算，工具本身不加价。 [来源1](https://github.com/nodetool-ai/nodetool/blob/9e3bdff35744a3a33300c303007e951f71fd9861/docs/faq.md) [来源7](https://osfoundry.io/features/usage-billing) 若在本地运行模型，下载完成后推理本身不产生按次费用，但需自行承担硬件采购与运维成本。 [来源1](https://github.com/nodetool-ai/nodetool/blob/9e3bdff35744a3a33300c303007e951f71fd9861/docs/faq.md) [来源2](https://raw.githubusercontent.com/jerrylususu/bookmark-summary/refs/heads/main/202503/2025-03-11-affording-your-ai-chatbot-friends.md) 自托管的经济性取决于使用强度：高频稳定使用时，GPU 硬件可能在数月内收回成本；轻度偶发使用时则未必划算。 [来源6](https://kaldryn.ai/research/on-premise-ai-tco-versus-cloud/) 此外，自托管的最大隐性成本通常是人员运维，而非硬件本身。 [来源2](https://raw.githubusercontent.com/jerrylususu/bookmark-summary/refs/heads/main/202503/2025-03-11-affording-your-ai-chatbot-friends.md) [来源6](https://kaldryn.ai/research/on-premise-ai-tco-versus-cloud/)
-
-
-### 桌面 AI 助手执行命令失败时怎么排查，日志在哪里看？
-
-桌面 AI 助手执行命令失败时，可先定位磁盘上的日志文件，再结合系统信息导出用于问题报告。 [来源1](https://github.com/whitetowerai/ohmygame/blob/f353687d74adb31044cbeaae5d7a16615be24253/docs/diagnostics.md) [来源4](https://docs.nvidia.com/ai-workbench/reference/troubleshooting/logging) 日志通常按组件分文件存放，例如桌面应用主进程与服务进程各写一份，便于分别追踪。 [来源1](https://github.com/whitetowerai/ohmygame/blob/f353687d74adb31044cbeaae5d7a16615be24253/docs/diagnostics.md) [来源4](https://docs.nvidia.com/ai-workbench/reference/troubleshooting/logging) [来源5](https://docs.nvidia.com/ai-workbench/reference/troubleshooting/logging.md) 导出日志时往往一并打包系统信息，但需注意部分追踪文件含逐字工具结果，发送前应先阅读。 [来源1](https://github.com/whitetowerai/ohmygame/blob/f353687d74adb31044cbeaae5d7a16615be24253/docs/diagnostics.md) [来源8](https://raw.githubusercontent.com/amd/gaia/d785e1f739a8b94cd3908ad5726b495601163694/docs/reference/cli.mdx)
+将原始消息、文本或 JSON 作为不可变条目逐字存储，派生的事实与摘要保留指向这些条目的关联 ID，即可从结果反查原文。 [来源5](https://help.getzep.com/v3/source-traceability) [来源8](https://help.getzep.com/v4/episodes)为每条材料记录来源 URL、不可变材料 ID 与正文指纹，同文字但不同网址且无来源依据时不合并。 [来源4](https://github.com/shinerain1/dsh-evidence-lineage)引用与派生需区分：引用只表示引用关系，派生需声明整条材料来自父材料，混合内容应先拆分摘录，关系可撤销并拒绝循环引用。 [来源4](https://github.com/shinerain1/dsh-evidence-lineage)没有可用链接时，用真实的作者、日期、文件名与位置作来源标签，不要编造页码、时间戳或 ID。 [来源6](https://github.com/semoss/semoss/blob/20ac74ee157fbab559ed38b8481e5aa26f63f770/project/platform__collaboration/app_root/version/assets/public/references/sources/citations-and-uncertainty.md)需注意，来源追踪只记录信息来自何处，并不证明来源内容或派生事实为真。 [来源5](https://help.getzep.com/v3/source-traceability) [来源8](https://help.getzep.com/v4/episodes)
 
 
-### 本地 AI 智能体读写文件时怎么防止误删重要资料？
+### 怎么评估追踪一家公司消息的成本和收益？值不值得花时间？
 
-防止误删的核心做法是：在智能体动手前先划定可写范围并保留可恢复的副本，而不是依赖提示词约束。 [来源1](https://github.com/cherryhq/cherry-studio/blob/7292b81999c86f1f1439bf12d1a874b9436743f3/docs/website/content/advanced-basic/cases/project-delivery.md) [来源4](https://shop.zimaspace.com/en-ca/blogs/support-tips/recoverable-copies-ai-agent-files) [来源6](https://shop.zimaspace.com/pl/blogs/support-tips/mac-for-ai-nas-for-memory-private-ai-stack) 具体而言，应只授予当前项目目录的最小工作目录权限，重要文件先有备份或版本记录，权限从逐次确认开始。 [来源1](https://github.com/cherryhq/cherry-studio/blob/7292b81999c86f1f1439bf12d1a874b9436743f3/docs/website/content/advanced-basic/cases/project-delivery.md) 删除、覆盖或批量改名等高风险操作应先要求确认，并可在高风险任务中先使用仅规划模式核对文件清单和步骤。 [来源1](https://github.com/cherryhq/cherry-studio/blob/7292b81999c86f1f1439bf12d1a874b9436743f3/docs/website/content/advanced-basic/cases/project-delivery.md) [来源5](https://www.w3cschool.cn/workbuddydocs/workbuddydocs-permission-modes.html) 此外，应在隔离、可信且可恢复的目录中才考虑放宽权限，并用无害样本实际测试一次编辑与删除后的恢复流程。 [来源1](https://github.com/cherryhq/cherry-studio/blob/7292b81999c86f1f1439bf12d1a874b9436743f3/docs/website/content/advanced-basic/cases/project-delivery.md) [来源4](https://shop.zimaspace.com/en-ca/blogs/support-tips/recoverable-copies-ai-agent-files)
-
-
-### ai agent 本地文件管理
-
-本地文件管理类 AI agent 的常见做法是把文件访问限制在指定目录内，并通过路径校验防止越界访问。 [来源4](https://pkg.go.dev/github.com/halukerenozlu/bolt-cowork@v0.3.2) [来源5](https://pkg.go.dev/github.com/halukerenozlu/bolt-cowork@v0.3.1) [来源8](https://docs.ag2.ai/docs/user-guide/tools/common_toolkits/) 部分实现还提供只读模式、符号链接逃逸防护和保留文件名保护等额外约束。 [来源4](https://pkg.go.dev/github.com/halukerenozlu/bolt-cowork@v0.3.2) [来源5](https://pkg.go.dev/github.com/halukerenozlu/bolt-cowork@v0.3.1) [来源8](https://docs.ag2.ai/docs/user-guide/tools/common_toolkits/) 在数据留存上，会话、文件与配置可保存在本机，请求只发往用户自行接入的模型接口。 [来源6](https://docs.siliconflow.cn/docs/usercases/use-siliconcloud-in-yan) [来源7](https://www.npmjs.com/package/lobsterai)
+可先界定需要监测的媒体范围和提醒频率，因为提醒的时效性往往与内容同样重要。 [来源6](https://painepublishing.com/wp-content/uploads/2017/08/Social-Media-101-v4.pdf)若目的是投资或合作决策，可把社交媒体等非财务信息纳入尽调，用以补充传统定性分析。 [来源5](https://media.crai.com/wp-content/uploads/2021/03/23155933/RIA-Insights-Social-Media-DD-Focus-1.pdf)但非财务信息的影响有时难以量化，且分析者常因目标过多而更依赖易用的数字指标。 [来源7](https://researchcommons.waikato.ac.nz/bitstream/handle/10289/10008/thesis.pdf?sequence=3&isAllowed=y)因此可优先追踪能直接支撑判断的少数指标，而非追求覆盖全部信息源。 [来源5](https://media.crai.com/wp-content/uploads/2021/03/23155933/RIA-Insights-Social-Media-DD-Focus-1.pdf) [来源7](https://researchcommons.waikato.ac.nz/bitstream/handle/10289/10008/thesis.pdf?sequence=3&isAllowed=y)
 
 
-### 桌面ai工具推荐 怎么用
+### 用什么方法可以把一家公司的消息按主题和实体整理成图谱？
 
-桌面 AI 工具的选择应先按部署方式与使用门槛分类，再结合自身硬件和隐私需求取舍。 [来源1](https://cloud.tencent.com.cn/developer/article/2714852?policyId=1003) [来源4](https://cloud.tencent.com.cn/developer/article/2719035?policyId=1003) 按部署方式，云端配置简单但数据需上传，本地方案数据不出本机、隐私较好但更依赖硬件。 [来源1](https://cloud.tencent.com.cn/developer/article/2714852?policyId=1003) 按使用门槛，可分为内置模型、零配置的开箱即用型，以及需接入 API Key、自选模型的半配置型。 [来源1](https://cloud.tencent.com.cn/developer/article/2714852?policyId=1003) 成本上，软件本体多为开源或免费分发，持续成本主要来自模型推理：云端按 token 计费，本地则转化为显存开销。 [来源4](https://cloud.tencent.com.cn/developer/article/2719035?policyId=1003) 挑选时可优先考虑带“执行前先询问”和“可随时接管”设计的产品，并从一个小任务起步。 [来源1](https://cloud.tencent.com.cn/developer/article/2714852?policyId=1003) [来源3](https://github.com/netease-youdao/lobsterai/blob/5d6621a0aed22adb53439e290234cc2d64318caf/README_zh.md)
-
-
-### 桌面ai工具推荐软件
-
-桌面 AI 工具大致可分为三类：客户端免费但进阶功能订阅、每日赠送额度、以及完全开源但需自付模型调用成本。 [来源1](https://cloud.tencent.com.cn/developer/article/2719015) 完全开源方案本身不收费、代码公开，但调用云端模型 API 的费用需自行承担，接入本地模型才能实现全程零成本，代价是配置较繁琐且有硬件要求。 [来源1](https://cloud.tencent.com.cn/developer/article/2719015) 开源方案通常支持自定义模型与并行处理，并可在安全沙盒中执行脚本以处理文件整理、文档生成等任务。 [来源2](https://www.infoq.cn/article/5MpkYtE3SNEXSvkAYM03) 多模型接入类工具可在一个界面接入多家模型服务商，支持自定义系统提示、文件附件与本地工具调用。 [来源4](https://github.com/beizheguangdexiangrikui/kuihua)
+先对结构化数据做 ETL、对半结构化和非结构化数据用爬虫加自然语言处理抽取实体、属性与关系，从而生成行业知识图谱。 [来源2](http://patentimages.storage.googleapis.com/29/57/90/9b0542d212ede2/TWI664539B.pdf)抽取前用一份明确的图数据定义限定允许的对象类型、属性、关系方向与端点类型，可减少不同模型或提示词造成的类型不一致。 [来源8](https://github.com/agents-flex/agents-flex/blob/8bb2c6ec7a0dda4de7ef4352152318effa95acf5/docs/zh/graph/extractor/schema-driven-extraction.md)对长文本可按章节分批抽取，而非一次性抽取全部字段，以便针对不同字段设置不同置信度阈值。 [来源5](https://cloud.tencent.com.cn/developer/article/2686217?policyId=1004)工程上可先用基线模型跑通标注、训练到入库的闭环，再针对长文本和复杂关系升级模型。 [来源5](https://cloud.tencent.com.cn/developer/article/2686217?policyId=1004)主题与实体的关联可借助知识图谱按主题检索匹配节点来实现。 [来源4](https://patentsgazette.uspto.gov/week09/OG/html/1532-1/US12242808-20250304.html)
 
 
-### 桌面ai智能体官网
+### 追踪一家公司消息时，怎么避免被单一信息源带偏？
 
-桌面 AI 智能体的官网入口因产品而异，通常需从各产品官方渠道获取下载链接。 [来源1](http://mp.weixin.qq.com/s?__biz=MzA4NjI4MzM4MQ%3D%3D&mid=2660259381&idx=1&sn=cce27b15624c5518c304a49125b8c6cb) [来源4](https://www.cnii.com.cn/gxxww/rmydb/202605/t20260502_733645.html) [来源6](https://wukong.dingtalk.com/docs/faq/) 部分产品提供 Mac 和 Windows 两个版本，用户通过官网下载即可使用，无需额外部署。 [来源1](http://mp.weixin.qq.com/s?__biz=MzA4NjI4MzM4MQ%3D%3D&mid=2660259381&idx=1&sn=cce27b15624c5518c304a49125b8c6cb) 此外，本地客户端在场景拓展和上下文探索上空间更大，但关机时无法执行，且下载安装的渗透率低于网页应用。 [来源8](http://www.geekpark.net/news/371238)
-
-就已知事实看，Rescot 免费（0 元、无应用内购买），仅支持 Windows x64，内置 13 家模型服务商加 1 个自定义 OpenAI 兼容端点，模型费用由用户自己的服务商按用量收取。Full Access 分三档，可访问工作区、挂载目录与全盘。
+首先，应刻意阅读与自身判断相反的可信观点，以测试论点的薄弱环节。 [来源2](https://www.delta-asia.com.hk/zh-cn/%E5%BA%B7%E5%BA%84%E5%A4%A7%E9%81%93%E4%B8%93%E6%A0%8F-2025/2025-10-10-%E5%A6%82%E4%BD%95%E9%A9%BE%E9%A9%AD%E8%B5%84%E8%AE%AF%E6%B4%AA%E6%B5%81/) [来源5](https://www.mangalore-icai.org/Attachment/163928721_The%20Oracle%20Newsletter%20-%20May_June%202024_compressed%20(4).pdf) [来源6](https://www.delta-asia.com.hk/%E5%BA%B7%E8%8E%8A%E5%A4%A7%E9%81%93%E5%B0%88%E6%AC%84-2025/2025-10-10-%E5%A6%82%E4%BD%95%E9%A7%95%E9%A6%AD%E8%B3%87%E8%A8%8A%E6%B4%AA%E6%B5%81/)其次，在采信某条信息前，要追问主要消息来源是谁、评论者是否存在既得利益、数据呈现的背景是否完整。 [来源2](https://www.delta-asia.com.hk/zh-cn/%E5%BA%B7%E5%BA%84%E5%A4%A7%E9%81%93%E4%B8%93%E6%A0%8F-2025/2025-10-10-%E5%A6%82%E4%BD%95%E9%A9%BE%E9%A9%AD%E8%B5%84%E8%AE%AF%E6%B4%AA%E6%B5%81/) [来源6](https://www.delta-asia.com.hk/%E5%BA%B7%E8%8E%8A%E5%A4%A7%E9%81%93%E5%B0%88%E6%AC%84-2025/2025-10-10-%E5%A6%82%E4%BD%95%E9%A7%95%E9%A6%AD%E8%B3%87%E8%A8%8A%E6%B4%AA%E6%B5%81/) [来源7](https://www.delta-asia.com.mo/%E5%BA%B7%E8%8E%8A%E5%A4%A7%E9%81%93%E5%B0%88%E6%AC%84-2025/2025-10-10-%E5%A6%82%E4%BD%95%E9%A7%95%E9%A6%AD%E8%B3%87%E8%A8%8A%E6%B4%AA%E6%B5%81/)同时，需警惕确认偏见，即只寻找与现有看法一致的信息而忽略矛盾数据。 [来源5](https://www.mangalore-icai.org/Attachment/163928721_The%20Oracle%20Newsletter%20-%20May_June%202024_compressed%20(4).pdf) [来源8](https://www.linkedin.com/posts/kevinhanegan_seeing-the-whole-picture-media-bias-data-activity-7287474824447184896-bqza)此外，可对多个来源进行三角验证，并检查信息是否只突出了部分事实而省略了其他关键细节。 [来源8](https://www.linkedin.com/posts/kevinhanegan_seeing-the-whole-picture-media-bias-data-activity-7287474824447184896-bqza)最后，信息的“可信度”并非来源的固有属性，而取决于它与你所要做的具体决策、时间窗口以及判断错误的代价之间的关系。 [来源4](https://www.linkedin.com/posts/alina-sharon-green_confession-the-more-sources-i-have-the-activity-7432840400765128704-G4Yt)
 
 
-### 本地部署ai助手
+### 追踪一家公司要花多少时间？有没有更省力的做法？
 
-本地部署 AI 助手的核心做法是在用户自己的设备上运行模型与推理，数据不离开本机，并可离线工作。 [来源4](https://learn.microsoft.com/zh-cn/azure/foundry-local/what-is-foundry-local) [来源5](https://learn.microsoft.com/zh-tw/azure/foundry-local/what-is-foundry-local?view=foundry) 取舍在于：本地运行可避免按令牌计费并降低网络延迟，但效果与速度受本机硬件和量化程度制约。 [来源4](https://learn.microsoft.com/zh-cn/azure/foundry-local/what-is-foundry-local) [来源6](https://learn.microsoft.com/zh-hk/Azure/foundry-local/what-is-foundry-local)
-
-
-### 桌面ai智能体有哪些
-
-桌面AI智能体目前主要分为成品客户端、开源框架封装和低代码搭建平台几类。 [来源5](https://developer.aliyun.com/article/1751885) [来源7](https://cloud.tencent.com.cn/developer/article/2716640?policyId=1003) 成品客户端下载后扫码即可使用，无需配置环境，代表形态包括全场景办公助理、本地知识工作工具和数据分析类工具。 [来源5](https://developer.aliyun.com/article/1751885) [来源8](https://cloud.tencent.com.cn/developer/article/2728435?policyId=1004) 开源侧则提供可审计、可二次开发的框架，支持本地模型接入与技能扩展，部署门槛和API调用成本是主要取舍点。 [来源3](https://www.cnr.cn/bj/sijh/20260328/t20260328_527565410.shtml) [来源6](https://m.cnstock.com/commonDetail/642905) 在安全设计上，部分产品采用本地优先与沙盒执行策略，敏感操作需用户手动确认。 [来源1](https://www.stdaily.com/web/gdxw/2026-02/11/content_473195.html) [来源3](https://www.cnr.cn/bj/sijh/20260328/t20260328_527565410.shtml)
-
-就已知事实看，Rescot 免费（0 元、无应用内购买），仅支持 Windows x64，内置 13 家模型服务商加 1 个自定义 OpenAI 兼容端点，模型费用由用户自己的服务商按用量收取。Full Access 分三档，可访问工作区、挂载目录与全盘。
+1 分钟、173 次调用、43 美分，457 次运行中 402 次完成、54 次失败、1 次取消，失败率约 12%。 [来源3](https://machgtm.com/blog/researching-one-company-by-the-numbers)更省力的做法之一是让计时与任务直接绑定：成员开始任务时启动计时器，停止后工时自动挂到该任务并即时更新。 [来源1](https://ones.com/blog/time-project-management-software-a-practical-workflow-guide/?primary_category=knowledge)同时应把记录动作做得尽量无摩擦，要求实时或至少当天结束前记录，而不是拖到周末凭记忆补记。 [来源1](https://ones.com/blog/time-project-management-software-a-practical-workflow-guide/?primary_category=knowledge)每周对比计划工时与实际工时并寻找模式，可据此调整后续估算或排查原因。 [来源1](https://ones.com/blog/time-project-management-software-a-practical-workflow-guide/?primary_category=knowledge)此外，先审计并分类时间去向、再据此规划一周，也有助于发现耗时较多的行政类任务。 [来源4](https://business.walmart.com/learnmore/articles/administrative-task-time.html?adid=1500000000000040440525&veh=OPM&wmlspartner=&cn=Blog%207)
 
 
-### 本地文件读写ai
+### 怎么把一件事的来龙去脉整理成时间线，方便以后回看？
 
-让 AI 读写本地文件，通常的做法是把指定目录作为受限根路径，通过环境变量或配置限定可操作范围，而不是开放整个文件系统。 [来源1](https://pypi.org/project/airgap-file-bridge/1.0.4/) [来源2](https://pypi.org/project/airgap-file-bridge/1.0.3/) [来源3](https://pypi.org/project/marmory/) 另一种思路是只暴露目录树和按需读取的片段，而非整目录转储，从而减少上下文占用，有实测称可减少最多 62% 的上下文窗口 token。 [来源3](https://pypi.org/project/marmory/)
+第二步是确定时间线的起止点和最小时间单位，粒度太粗可能遗漏细节，太细则可能难以把握全局，可根据事件密集程度灵活调整。 [来源6](https://ones.cn/blog/knowledge/how-to-use-timeline-to-analyze-complex-events)第三步是选择线性、垂直、水平等呈现方式，并可用表格新增备注列、加宽单元格并自动换行来提升可读性。 [来源6](https://ones.cn/blog/knowledge/how-to-use-timeline-to-analyze-complex-events)维护良好的时间线每天约需半小时，其带来的秩序与清晰度通常能节省更多时间。 [来源1](https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_b1885064-236e-48ba-9b8a-e805d0046367?_=396955eng.pdf&to=187&from=1&__cf_chl_tk=KNJz7pOGaXCnrjt4YqC6kTXeZIxR7F3L.1uFedntDIE-1777235820-1.0.1.1-Cn8lsKw6GHS.xkhnY_mbLsoCiEe_8ZTz__PqKcI2LHQ) [来源6](https://ones.cn/blog/knowledge/how-to-use-timeline-to-analyze-complex-events)若事件先后顺序是重点，也可借助工具从来源中提取有日期或先后关系的事件自动排列，但生成结果仍需人工核对。 [来源1](https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_b1885064-236e-48ba-9b8a-e805d0046367?_=396955eng.pdf&to=187&from=1&__cf_chl_tk=KNJz7pOGaXCnrjt4YqC6kTXeZIxR7F3L.1uFedntDIE-1777235820-1.0.1.1-Cn8lsKw6GHS.xkhnY_mbLsoCiEe_8ZTz__PqKcI2LHQ)
+
+
+### 长期做预测复盘，用什么方式记录最省事？
+
+最省事的方式是只记录可验证的预测、依据和验收时限这三项核心字段，并尽量用结构化模板减少重复输入。 [来源3](https://yunshangyoupin.com/716291) [来源5](https://play.google.com/store/apps/details?id=online.longtou.plan&hl=zh)记录时应把预测与结论分开，写清预期结果及其概率，否则事后无法判断当初猜得准不准。 [来源3](https://yunshangyoupin.com/716291)同时要写明支持判断的关键依据和到期验收的时点，没有验收时点的记录既无法证伪也难以积累命中率。 [来源3](https://yunshangyoupin.com/716291)工具层面可选择支持自定义模板、草稿保存和语音图片附件的方案，以降低每次录入的操作成本。 [来源1](https://apps.apple.com/cn/app/%E4%BA%A4%E6%98%93%E8%AE%A1%E5%88%92-%E7%9B%98%E5%89%8D%E8%AE%A1%E5%88%92%E4%B8%8E%E5%A4%8D%E7%9B%98/id6760321164) [来源5](https://play.google.com/store/apps/details?id=online.longtou.plan&hl=zh)此外，样本笔数过少（如少于50笔）时记录难以支撑有效学习，需在积累足够数量后再做统计判断。 [来源4](https://sdeuniverses.com/students/hupo/stock-tanyou/gupiao-tanyou-ed1.pdf)
 
 
 
@@ -253,4 +209,4 @@ Rescot 免费，价格 0 元，无应用内购买。模型费用不由 Rescot �
 
 ---
 
-更新于 2026-11-15
+更新于 2026-11-13
